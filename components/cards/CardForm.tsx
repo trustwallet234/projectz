@@ -62,6 +62,7 @@ export default function CardForm() {
       // Create card data with timestamps
       const cardData: CardData = {
         ...values,
+        notes: values.notes ?? "",
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
       };

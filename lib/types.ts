@@ -22,3 +22,14 @@ export interface User {
   email: string | null;
   displayName: string | null;
 }
+
+
+type CardItemProps = {
+  card: EncryptedCard;
+  onDelete: (id: string) => void;
+};
+
+export function CardItem({ card, onDelete }: CardItemProps) {
+  // TODO: implement CardItem component
+  return null;
+}

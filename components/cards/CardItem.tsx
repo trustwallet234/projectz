@@ -14,7 +14,7 @@ import { db } from '@/lib/firebase';
 import { deleteDoc, doc } from 'firebase/firestore';
 import { useToast } from '@/hooks/use-toast';
 
-interface CardItemProps {
+export interface CardItemProps {
   card: EncryptedCard;
   onDelete: (id: string) => void;
 }
